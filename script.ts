@@ -54,7 +54,7 @@ interface Veiculo {
                     new Date().getTime() - new Date(entrada).getTime()
                     );
 
-                if(!confirm(`O veículo ${nome} permaneceu por ${tempo}. Deseja`)) return;
+                if(!confirm(`O veículo ${nome} permaneceu por ${tempo}. Deseja sair?`)) return;
 
                 salvar(ler().filter((veiculo) => veiculo.placa !== placa));
                 render();
